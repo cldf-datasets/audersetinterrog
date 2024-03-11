@@ -43,7 +43,7 @@ oldf1241,Old Frisian,,53.41,7.97,oldf1241,,Germanic,West Germanic,North Sea Germ
 east2288,Eastern Frisian,,52.9713,7.73549,east2288,,Germanic,West Germanic,North Sea Germanic,0,0,0
 nort2626,Northern Frisian,,54.6409,8.58489,nort2626,,Germanic,West Germanic,North Sea Germanic,0,0,0
 anci1242,Ancient Greek,,39.8155,21.9129,anci1242,,Greek,East Greek,,2515,2315,2415
-medi1252,Medieval Greek,,41,23,medi1252,,Greek,East Greek,Koineic Greek,1415,515,965
+medi1251,Medieval Greek,,41,23,medi1251,,Greek,East Greek,Koineic Greek,1415,515,965
 mode1248,Greek,,42.3224,24.8699,mode1248,,Greek,East Greek,Koineic Greek,0,0,0
 sans1269,Sanskrit,,20,77,sans1269,,Indo-Iranian,Indic,,3015,2615,2815
 pali1273,Pāli,,24.5271,82.251,pali1273,,Indo-Iranian,Indic,Bihari,2515,2115,2315
@@ -91,7 +91,7 @@ olds1249,Old Spanish,,39.4414,-1.5,olds1249,,Italic,Latino-Faliscan,Western Roma
 ital1282,Italian,,43.0464,12.6489,ital1282,,Italic,Latino-Faliscan,Western Romance,0,0,0
 vene1258,Venetian,,45.503581,12.214167,vene1258,,Italic,Latino-Faliscan,Western Romance,0,0,0
 stan1290,French,,48,2,stan1290,,Italic,Latino-Faliscan,Western Romance,0,0,0
-occi1249,Occitan,,44.1,4.5,occi1249,,Italic,Latino-Faliscan,Western Romance,0,0,0
+occi1239,Occitan,,44.1,4.5,occi1239,,Italic,Latino-Faliscan,Western Romance,0,0,0
 stan1288,Spanish,,40.4414,-1.11788,stan1288,,Italic,Latino-Faliscan,Western Romance,0,0,0
 port1283,Portuguese,,39.91,-8.1,port1283,,Italic,Latino-Faliscan,Western Romance,0,0,0
 roma1327,Romanian,,46.39,24.23,roma1327,,Italic,Latino-Faliscan,Eastern Romance,0,0,0
