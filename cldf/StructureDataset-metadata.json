@@ -15,7 +15,7 @@
         {
             "rdf:about": "https://github.com/cldf-datasets/audersetinterrog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-16-g5edaf52",
+            "dc:created": "v1.0-18-ga0447f5",
             "dc:title": "Repository"
         },
         {
@@ -269,7 +269,7 @@
                     },
                     {
                         "separator": ";",
-                        "name": "Grammaticon_IDs"
+                        "name": "Grammacodes"
                     }
                 ],
                 "primaryKey": [
