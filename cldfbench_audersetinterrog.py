@@ -103,7 +103,7 @@ class Dataset(BaseDataset):
             "LateTimeBP",
             "AvTimeBP",
         )
-        args.writer.cldf.add_component("ParameterTable")
+        args.writer.cldf.add_component("ParameterTable", 'Grammaticon_ID')
         args.writer.cldf.add_component("CodeTable")
         args.writer.cldf.add_table(
             'constructions.csv',
