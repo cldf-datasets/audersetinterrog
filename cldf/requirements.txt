@@ -4,7 +4,7 @@ Babel==2.12.1
 bs4==0.0.1
 certifi==2023.7.22
 cldfbench==1.13.0
--e git+https://github.com/cldf-datasets/audersetinterrog@ad134048d1f3d27a077da89fa5f33e42509e32a4#egg=cldfbench_audersetinterrog
+-e git+https://github.com/cldf-datasets/audersetinterrog@5edaf52c996afb978d740c729a6461b67fdb3982#egg=cldfbench_audersetinterrog
 cldfcatalog==1.5.1
 cldfzenodo==1.1.0
 clldutils==3.19.0
