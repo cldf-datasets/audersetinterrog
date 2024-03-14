@@ -1,4 +1,4 @@
-ID,Sheet_Column,Name,Description,Grammaticon_ID
+ID,Sheet_Column,Name,Description,Grammaticon_IDs
 rmform,RMform,Relative marker form,"the shape of the relative marker (when there are several forms for different genders, they are separated by a tilde (~)",RELZR
 ncases,NCases,Number of cases,number of case distinctions,CASE
 nclass,NClass,Number of genders or classes,number of gender classes or inflectional classes,GNDS

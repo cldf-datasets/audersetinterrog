@@ -18,6 +18,11 @@ class Dataset(BaseDataset):
         # read raw data
 
         parameters = list(self.etc_dir.read_csv("parameters.csv", dicts=True))
+        for parameter in parameters:
+            if (grammaticon_ids := parameter.get('Grammaticon_IDs')):
+                parameter['Grammaticon_IDs'] = [
+                    id_.strip()
+                    for id_ in grammaticon_ids.split(',')]
         codes_by_id = collections.OrderedDict(
             (row['ID'], row)
             for row in self.etc_dir.read_csv('codes.csv', dicts=True))
@@ -103,7 +108,12 @@ class Dataset(BaseDataset):
             "LateTimeBP",
             "AvTimeBP",
         )
-        args.writer.cldf.add_component("ParameterTable", 'Grammaticon_ID')
+        args.writer.cldf.add_component(
+            "ParameterTable",
+            {
+                'name': 'Grammaticon_IDs',
+                'separator': ';',
+            })
         args.writer.cldf.add_component("CodeTable")
         args.writer.cldf.add_table(
             'constructions.csv',
