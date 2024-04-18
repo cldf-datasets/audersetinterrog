@@ -1,9 +1,11 @@
 import collections
 import pathlib
+from itertools import islice
 
 from cldfbench import CLDFSpec
 from cldfbench import Dataset as BaseDataset
 from clldutils.misc import slug
+from pybtex.database import parse_string
 
 
 class Dataset(BaseDataset):
@@ -30,6 +32,26 @@ class Dataset(BaseDataset):
         raw_data = list(self.raw_dir.read_csv(
             "InterrogativeRelativeIE_Appendix1.csv", dicts=True))
 
+        sources = parse_string(self.raw_dir.read('AudersetReferences.bib'), 'bibtex')
+
+        language_sources = {
+            lang_id: [
+                stripped
+                for source in sources.split(',')
+                if (stripped := source.strip())]
+            for lang_id, sources in islice(
+                self.etc_dir.read_csv('language-sources.csv'),
+                1, None)}
+
+        value_sources = {
+            (lang_id, param_id): [
+                stripped
+                for source in sources.split(';')
+                if (stripped := source.strip())]
+            for lang_id, param_id, sources in islice(
+                self.etc_dir.read_csv('value-sources.csv'),
+                1, None)}
+
         # knead into a cldfifiable shape
 
         languages_by_id = collections.OrderedDict()
@@ -47,6 +69,7 @@ class Dataset(BaseDataset):
                     'AvTimeBP': row['AvTimeBP'],
                     'Latitude': row['Latitude'],
                     'Longitude': row['Longitude'],
+                    'Source': language_sources.get(row['Glottocode'], ()),
                 }
 
         constructions = [
@@ -94,6 +117,7 @@ class Dataset(BaseDataset):
                 'Language_ID': lang_id,
                 'Parameter_ID': 'rmforms',
                 'Value': ' / '.join(forms),
+                'Source': value_sources.get((lang_id, 'rmforms'), ()),
             }
             for lang_id, forms in forms_by_language.items()]
 
@@ -107,6 +131,7 @@ class Dataset(BaseDataset):
             "EarlyTimeBP",
             "LateTimeBP",
             "AvTimeBP",
+            'http://cldf.clld.org/v1.0/terms.rdf#source',
         )
         args.writer.cldf.add_component(
             "ParameterTable",
@@ -140,3 +165,5 @@ class Dataset(BaseDataset):
         args.writer.objects['CodeTable'] = codes_by_id.values()
         args.writer.objects['cvalues.csv'] = cvalues
         args.writer.objects['values.csv'] = values
+
+        args.writer.cldf.add_sources(sources)
