@@ -1,11 +1,11 @@
 ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source
 rmforms-gheg1238,gheg1238,rmforms,që / i cili ~ e cila,,,
 rmforms-tosk1239,tosk1239,rmforms,që / i cili ~ e cila,,,
-rmforms-hitt1242,hitt1242,rmforms,kuiš ~ kuit,,,
-rmforms-cune1239,cune1239,rmforms,kuīš ~ kui,,,
-rmforms-hier1240,hier1240,rmforms,kwi:s ~ kwadi,,,
-rmforms-clas1249,clas1249,rmforms,or,,,
-rmforms-nucl1235,nucl1235,rmforms,or / inč,,,
+rmforms-hitt1242,hitt1242,rmforms,kuiš ~ kuit,,,hoffner_grammar_2008
+rmforms-cune1239,cune1239,rmforms,kuīš ~ kui,,,melchert_language_2003;payne_hieroglyphic_2004
+rmforms-hier1240,hier1240,rmforms,kwi:s ~ kwadi,,,melchert_language_2003;payne_hieroglyphic_2004
+rmforms-clas1249,clas1249,rmforms,or,,,godel_introduction_1975;jensen_altarmenische_1959;kolligan_armenian_2006
+rmforms-nucl1235,nucl1235,rmforms,or / inč,,,dum-tragut_armenian_2009
 rmforms-prus1238,prus1238,rmforms,kas / kurš,,,
 rmforms-oldl1240,oldl1240,rmforms,kas,,,
 rmforms-lith1251,lith1251,rmforms,kàs  / kurìs ~ kurì,,,
@@ -42,7 +42,7 @@ rmforms-stan1293,stan1293,rmforms,that / who ~ what ~ which,,,
 rmforms-oldf1241,oldf1241,rmforms,thī ~ thiu ~ thet / thēr,,,
 rmforms-east2288,east2288,rmforms,däi,,,
 rmforms-nort2626,nort2626,rmforms,dit / wat / hur / diar,,,
-rmforms-anci1242,anci1242,rmforms,hos ~ hē ~ ho,,,
+rmforms-anci1242,anci1242,rmforms,hos ~ hē ~ ho,,,schwyzer_griechische_1990;schwyzer_griechische_1990-1
 rmforms-medi1251,medi1251,rmforms,tís ~ tí / ton ~ tēn ~ to / hostis ~ hētis ~ hoti,,,
 rmforms-mode1248,mode1248,rmforms,pou / o opoios ~ i opoia ~ to opoio,,,
 rmforms-sans1269,sans1269,rmforms,yáḥ ~ yā́ ~ yát,,,
@@ -96,5 +96,5 @@ rmforms-stan1288,stan1288,rmforms,que ~ quien / cuyo ~ cuya,,,
 rmforms-port1283,port1283,rmforms,que ~ quem / cujo ~ cuja,,,
 rmforms-roma1327,roma1327,rmforms,care / de,,,
 rmforms-camp1261,camp1261,rmforms,chi,,,
-rmforms-tokh1242,tokh1242,rmforms,kus=ne / äntsaṃ,,,
-rmforms-tokh1243,tokh1243,rmforms,kuse / intsu / mäksu,,,
+rmforms-tokh1242,tokh1242,rmforms,kus=ne / äntsaṃ,,,krause_tocharisches_1960;hackstein_evolution_2012
+rmforms-tokh1243,tokh1243,rmforms,kuse / intsu / mäksu,,,krause_tocharisches_1960;hackstein_evolution_2012

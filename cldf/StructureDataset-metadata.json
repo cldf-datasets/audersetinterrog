@@ -9,13 +9,14 @@
     "dc:description": "This study uses definitions tailored to the question at hand, to the specific characteristics of Indo-\nEuropean languages, and with the available material in mind. The goal of this study is to better\nunderstand the distribution of IRCs in space and time. Even though Indo-European languages dis-\nplay a range of constructions and markers when it comes to relativization, only a subset of those\nwill be considered here. For example, in some languages there are unmarked relative clauses, but\nsince interrogative pronouns are never zero, these cases are excluded. Furthermore, while this\nis not true cross-linguistically, most IE languages have a finite construction for expressing rela-\ntivization which facilitates comparison. As mentioned above, the data is collected primarily from\ngrammars and grammar sketches and thus necessarily limited to the descriptions and examples\nprovided there. Focusing on a subset of RC constructions allows for a broader sample.",
     "dc:identifier": "https://github.com/cldf-datasets/audersetinterrog/",
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
+    "dc:source": "sources.bib",
     "dc:title": "CLDF dataset derived from Auderset's \"Interrogatives as relativization markers in Indo-European\" from 2020",
     "dcat:accessURL": "https://github.com/cldf-datasets/audersetinterrog",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/cldf-datasets/audersetinterrog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-18-ga0447f5",
+            "dc:created": "v1.0-20-gcfc86eb",
             "dc:title": "Repository"
         },
         {
@@ -28,7 +29,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.10"
+            "dc:description": "3.11.2"
         },
         {
             "dc:title": "python-packages",
@@ -227,6 +228,12 @@
                     {
                         "datatype": "string",
                         "name": "AvTimeBP"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "separator": ";",
+                        "name": "Source"
                     }
                 ],
                 "primaryKey": [
