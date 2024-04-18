@@ -44,11 +44,14 @@ class Dataset(BaseDataset):
                 1, None)}
 
         value_sources = {
-            (lang_id, param_id): [
-                stripped
-                for source in sources.split(';')
-                if (stripped := source.strip())]
-            for lang_id, param_id, sources in islice(
+            (lang_id, param_id): {
+                'Comment': comment,
+                'Source': [
+                    stripped
+                    for source in sources.split(';')
+                    if (stripped := source.strip())],
+            }
+            for lang_id, param_id, comment, sources in islice(
                 self.etc_dir.read_csv('value-sources.csv'),
                 1, None)}
 
@@ -113,11 +116,18 @@ class Dataset(BaseDataset):
             forms_by_language[glottocode].append(row['RMform'])
         values = [
             {
-                'ID': 'rmforms-{}'.format(lang_id),
+                'ID': f'rmforms-{lang_id}',
                 'Language_ID': lang_id,
                 'Parameter_ID': 'rmforms',
                 'Value': ' / '.join(forms),
-                'Source': value_sources.get((lang_id, 'rmforms'), ()),
+                'Source':
+                    value_sources
+                    .get((lang_id, 'rmforms'), {})
+                    .get('Source', ()),
+                'Comment':
+                    value_sources
+                    .get((lang_id, 'rmforms'), {})
+                    .get('Comment', ''),
             }
             for lang_id, forms in forms_by_language.items()]
 
