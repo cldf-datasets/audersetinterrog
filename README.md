@@ -1,5 +1,12 @@
 # CLDF dataset derived from Auderset's "Interrogatives as relativization markers in Indo-European" from 2020
 
+## How to cite
+
+If you use these data please cite
+this dataset using the DOI of the [particular released version](../../releases/) you were using
+
+## Description
+
 
 This study uses definitions tailored to the question at hand, to the specific characteristics of Indo-
 European languages, and with the available material in mind. The goal of this study is to better
@@ -15,3 +22,10 @@ provided there. Focusing on a subset of RC constructions allows for a broader sa
 This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://github.com/cldf-datasets/audersetinterrog/
+
+
+## CLDF Datasets
+
+The following CLDF datasets are available in [cldf](cldf):
+
+- CLDF [StructureDataset](https://github.com/cldf/cldf/tree/master/modules/StructureDataset) at [cldf/StructureDataset-metadata.json](cldf/StructureDataset-metadata.json)
