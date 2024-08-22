@@ -5,7 +5,7 @@ bibtexparser==2.0.0b7
 bs4==0.0.2
 certifi==2024.7.4
 cldfbench==1.14.0
--e git+https://github.com/cldf-datasets/audersetinterrog@876e247e1e209591d8188b096672a837f9788cb6#egg=cldfbench_audersetinterrog
+-e git+https://github.com/cldf-datasets/audersetinterrog@36e57d8ccd143b1e1da216110997e4eeadb97ed5#egg=cldfbench_audersetinterrog
 cldfcatalog==1.5.1
 cldfzenodo==2.1.1
 clldutils==3.22.2
