@@ -21,7 +21,7 @@ provided there. Focusing on a subset of RC constructions allows for a broader sa
 
 This dataset is licensed under a CC-BY-4.0 license
 
-Available online at https://github.com/cldf-datasets/audersetinterrog/
+Available online at https://crossgram.clld.org/contributions/audersetinterrog
 
 
 ## CLDF Datasets
