@@ -1,5 +1,7 @@
 # CLDF dataset derived from Auderset's "Interrogatives as relativization markers in Indo-European" from 2020
 
+[![CLDF validation](https://github.com/cldf-datasets/audersetinterrog/workflows/CLDF-validation/badge.svg)](https://github.com/cldf-datasets/audersetinterrog/actions?query=workflow%3ACLDF-validation)
+
 ## How to cite
 
 If you use these data please cite
